@@ -1,0 +1,73 @@
+"Games"
+{
+	"csgo"
+	{
+		"Addresses"
+		{
+			"PlayerFlagBits"
+			{
+				"signature"	"PlayerFlagBits"
+				"offset" "2"
+			}
+			"CropFlagsToPlayerFlagBitsLength"
+			{
+				"signature"	"CropFlagsToPlayerFlagBitsLength"
+				"offset" "13"
+			}
+			"vecBaseVelMin"
+			{
+				"signature"	"vecBaseVelMax"
+				"offset" "2"
+			}
+			"vecBaseVelMax"
+			{
+				"signature"	"vecBaseVelMax"
+				"offset" "12"
+			}
+			"vecBaseVelBits"
+			{
+				"signature"	"vecBaseVelBits"
+				"offset" "2"
+			}
+			"vecBaseVelFlags"
+			{
+				"signature"	"vecBaseVelBits"
+				"offset" "12"
+			}
+			
+            	"g_SendTableCRC"
+            	{
+               		"signature" "SendTable_Init"
+                    	"read"  "205"
+            	}
+		}
+		"Signatures"
+		{
+			"vecBaseVelMax"
+			{
+				"library" "server"
+				"windows" "\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x7A\xC4\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x7A\x44"
+			}
+			"vecBaseVelBits"
+			{
+				"library" "server"
+				"windows" "\xC7\x05\x2A\x2A\x2A\x2A\x14\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x00\x00\x00\x00"
+			}
+			"CropFlagsToPlayerFlagBitsLength"
+			{
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x8B\x45\x10\x8B\x08\x8B\x45\x14\x81\xE1\xFF\x07\x00\x00"
+			}
+			"PlayerFlagBits"
+			{
+				"library" "server"
+				"windows" "\xC7\x05\x2A\x2A\x2A\x2A\x0B\x00\x00\x00\xC7\x05\x2A\x2A\x2A\x2A\x01\x00\x04\x00"
+			}
+			"SendTable_Init"
+			{
+				"library" "engine"
+				"windows" "\x55\x8B\xEC\x83\xEC\x0C\x83\x3D\x2A\x2A\x2A\x2A\x00\x53"
+			}
+		}
+	}
+} 
